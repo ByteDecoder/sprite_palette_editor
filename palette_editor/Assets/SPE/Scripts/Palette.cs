@@ -1,32 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEditor;
 
 [System.Serializable]
 public class Palette : ScriptableObject
 {
-    [MenuItem("Assets/Create/SPE/Palette")]
-    public static void CreatePalette()
-    {
-        if(Selection.activeObject is Texture2D) {
-            var selectedTexture = Selection.activeObject as Texture2D;
-
-            string selectionPath = AssetDatabase.GetAssetPath(selectedTexture);
-            selectionPath = selectionPath.Replace(".png", "-palette.asset");
-
-            var newPalette = CustomAssetUtil.CreateAsset<Palette>(selectionPath);
-            newPalette.sourceTexture = selectedTexture;
-
-            newPalette.ResetPalette();
-
-        } else {
-
-        }
-    }
-
     public Texture2D sourceTexture;
     public List<Color> palette = new List<Color>();
     public List<Color> newPalette = new List<Color>();
+
+    public Texture2D cachedTexture;
 
     private List<Color> GetPalette(Texture2D texture)
     {
@@ -49,5 +31,23 @@ public class Palette : ScriptableObject
     {
         palette = GetPalette(sourceTexture);
         newPalette = new List<Color>(palette);
+    }
+
+    public Color GetColour(Color colour)
+    {
+        for (int i = 0; i < palette.Count; i++)
+        {
+            var tmpColour = palette[i];
+
+            if(Mathf.Approximately(colour.r, tmpColour.r) &&
+                Mathf.Approximately(colour.b, tmpColour.b) &&
+                Mathf.Approximately(colour.g, tmpColour.g) &&
+                Mathf.Approximately(colour.a, tmpColour.a))
+            {
+                return newPalette[i];
+            }
+        }
+
+        return colour;
     }
 }

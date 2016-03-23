@@ -1,0 +1,23 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA GeForce 8600 GTS (ID=0x400)
+    Vendor:   NVIDIA
+    VRAM:     1184 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.872 seconds
+Platform assembly: C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\robert\Documents\sprite_palette_editor\palette_editor\Builds\TestBuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
